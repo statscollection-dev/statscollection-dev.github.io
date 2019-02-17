@@ -156,7 +156,7 @@ Valuable contributions include:</p>
 <li><strong>Code contributions</strong> - extending sub-packages or <em>creating your own sub-package</em>.</li>
 </ul>
 <p>Contributors may list their full name or GitHub username in the <a class="reference internal" href="index.html#contributors"><span class="std std-ref">Contributors</span></a> section below.
-Contributors which provide high-quality content will be given membership to the <a class="reference external" href="https://github.com/statscollection-dev">statscollection-dev</a> GitHub organization.</p>
+Contributors providing high-quality content will be given membership to the <a class="reference external" href="https://github.com/statscollection-dev">statscollection-dev</a> GitHub organization.</p>
 <p>This page explains how to create a pull request, how to contribute to the documentation, and how to contribute to the code.
 In addition to the text below, the following resources might be useful:</p>
 <ul class="simple">
@@ -203,8 +203,8 @@ If your pull request fails on Travis CI, make the necessary changes and push a n
 </div>
 <div class="section" id="terminal-session-for-a-pull-request">
 <h3>Terminal session for a pull request<a class="headerlink" href="#terminal-session-for-a-pull-request" title="Permalink to this headline">¶</a></h3>
-<p>A terminal session with comments in presented below.
-We start by cloning the project to our GitHub account, downloading the files and adding a remote.</p>
+<p>A terminal session with comments is presented below.
+We start by cloning the project from our GitHub account, downloading the files and adding a remote.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git --version <span class="c1"># git version 2.7.4</span>
 <span class="gp">$</span> git clone https://github.com/&lt;YOUR_NAME&gt;/statscollection.git
 <span class="gp">$</span> <span class="nb">cd</span> statscollection <span class="c1"># Change directory</span>
@@ -243,7 +243,7 @@ This is not a requirement, you can use the <code class="docutils literal notrans
 </ol>
 <div class="section" id="building-the-docs">
 <h3>Building the docs<a class="headerlink" href="#building-the-docs" title="Permalink to this headline">¶</a></h3>
-<p>Docs may be built the <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> command.</p>
+<p>Docs may be built using the <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> command.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sphinx-build doc html -a -E -W --keep-going -T
 </pre></div>
 </div>
@@ -258,7 +258,7 @@ This is not a requirement, you can use the <code class="docutils literal notrans
 <p>If you wish to contribute code, you have to</p>
 <ol class="arabic simple">
 <li>Run formatting on the code via the <a class="reference external" href="https://black.readthedocs.io/en/stable/">black</a> code formatter.</li>
-<li>Write proper documentation and tests for the code, testing is done using <a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a>.</li>
+<li>Write tests for the code, testing is done using <a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a>.</li>
 <li>Document the code well, this project uses <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">numpydoc docstrings</a>.</li>
 <li>Balance readability with performance.
 Readability has first priority, but if you <a class="reference external" href="http://pynash.org/2013/03/06/timing-and-profiling/">time the code</a> and identify bottlenecks, they should be optimized.</li>
@@ -297,13 +297,13 @@ Run black on the Python files before submitting a pull request.</p>
 <div class="section" id="building-and-deploying">
 <h2>Building and deploying<a class="headerlink" href="#building-and-deploying" title="Permalink to this headline">¶</a></h2>
 <p>Developer notes go here.</p>
-<div class="section" id="code-ideas">
-<h3>Code ideas<a class="headerlink" href="#code-ideas" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="code-contribution-ideas">
+<h3>Code contribution ideas<a class="headerlink" href="#code-contribution-ideas" title="Permalink to this headline">¶</a></h3>
 <p>Below is a list of routines that would be nice to see implemented.</p>
 <ul class="simple">
 <li>Bootstrapping and resampling functions.</li>
 <li>Online statistics.</li>
-<li>Kernel density estimators.</li>
+<li>Kernel density estimators (copy implementation from KDEpy).</li>
 <li>Kernel regression.</li>
 <li>Other nonparametric routines.</li>
 <li>Statistical tests, such as exact Mann–Whitney U test.</li>
