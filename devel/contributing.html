@@ -1,0 +1,364 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+    <title>Contributing &#8212; statscollection 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/gallery.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/copybutton.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Online" href="packages/online.html" />
+    <link rel="prev" title="Statscollection" href="index.html" />
+  
+  <link rel="apple-touch-icon" href="_static/images/logos/statscollection_logo.png" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="packages/online.html" title="Online"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Statscollection"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">statscollection 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+  <a href="index.html">
+    <img src="_static/images/logos/statscollection_logo.png" style="width:100%; margin-bottom: 0.5em;">
+    </a>
+    <!-- <footer>Slogan goes here</footer> -->
+    
+    <a href="https://travis-ci.com/statscollection-dev/statscollection">
+      <img src="https://travis-ci.com/statscollection-dev/statscollection.svg?branch=master" alt="Build Status" />
+    </a>
+    
+    <a href="https://badge.fury.io/py/statscollection">
+      <img src="https://badge.fury.io/py/statscollection.svg" alt="PyPI version" />
+    </a>
+
+    
+    <h2>Table Of Contents</h2>
+  
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Statscollection</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-pull-request">Creating a Pull Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation-contributions">Documentation contributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-contributions">Code contributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-and-deploying">Building and deploying</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packages/online.html">Online</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packages/example.html">Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery_generated_examples/index.html">Example gallery</a></li>
+</ul>
+
+    
+  </div>
+  
+  <h2>Get involved on GitHub</h2>
+  
+  <div class="sidebar-toc">
+<ul>
+  
+  <li class="toctree-l1">
+  <!-- Github buttons. -->
+    <span style="padding: 5px 25px;">
+    <a class="github-button" href="https://github.com/statscollection-dev/statscollection" 
+    data-icon="octicon-star" data-size="large" data-show-count="true" 
+    aria-label="Star statscollection-dev/statscollection on GitHub">Star</a>
+    </span>
+  </li>
+  
+  <li class="toctree-l1">
+    <span style="padding: 5px 25px;">
+    <a class="github-button" href="https://github.com/statscollection-dev/statscollection/fork" 
+    data-icon="octicon-repo-forked" data-size="large" data-show-count="true" 
+    aria-label="Fork statscollection-dev/statscollection on GitHub"
+    style="margin-left:10px;">Fork</a>
+    </span>
+  </li>
+</ul>
+</div>
+  
+ 
+ </div>
+ </div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>Contributing</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="contributing">
+<span id="id1"></span><h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>Clean code, high-quality documentation and clear contribution guidelines will attract proficient developers.</div></blockquote>
+<p>Statscollection aims to be extremely <em>accessible to contributors</em>.
+Valuable contributions include:</p>
+<ul class="simple">
+<li><strong>Documentation fixes</strong> - spell-checking, rewriting, clarifying, extending, etc.</li>
+<li><strong>Code reviews</strong> - reviewing existing code, rewriting functions, improving algorithms, etc.</li>
+<li><strong>Code contributions</strong> - extending sub-packages or <em>creating your own sub-package</em>.</li>
+</ul>
+<p>Contributors may list their full name or GitHub username in the <a class="reference internal" href="index.html#contributors"><span class="std std-ref">Contributors</span></a> section below.
+Contributors which provide high-quality content will be given membership to the <a class="reference external" href="https://github.com/statscollection-dev">statscollection-dev</a> GitHub organization.</p>
+<p>This page explains how to create a pull request, how to contribute to the documentation, and how to contribute to the code.
+In addition to the text below, the following resources might be useful:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.youtube.com/watch?v=rgbCcBNZcdQ">Creating a Simple Github Pull Request</a></li>
+<li><a class="reference external" href="https://opensource.guide/how-to-contribute/">How to Contribute to Open Source</a></li>
+<li><a class="reference external" href="https://git-scm.com/book/en/v2">The git book</a></li>
+<li><a class="reference external" href="https://learngitbranching.js.org/">Learn Git Branching</a></li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Do you know of any other good resources? <strong>Create a pull request</strong> and we’ll add it.</p>
+</div>
+<p>If you have trouble making a contribution, please create an <a class="reference external" href="https://github.com/statscollection-dev/statscollection/issues">Issue</a> to get help.</p>
+<div class="section" id="creating-a-pull-request">
+<h2>Creating a Pull Request<a class="headerlink" href="#creating-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<p>In order to contribute, you have to create a pull request on <a class="reference external" href="https://github.com/">GitHub</a>.
+Begin by creating a free account on GitHub if you have not done so already.
+Below is a list describing the steps needed to create a pull request.</p>
+<ol class="arabic simple">
+<li>Fork the <a class="reference external" href="https://github.com/statscollection-dev/statscollection">statscollection</a> repository on GitHub.
+This copies the project to your personal GitHub profile.</li>
+<li>Clone the fork to your local computer by typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/&lt;YOUR_NAME&gt;/statscollection.git</span></code> in the terminal (git bash if you’re on Windows).
+This downloads the files to your computer.</li>
+<li>Add <code class="docutils literal notranslate"><span class="pre">statscollection-dev/statscollection</span></code> as a remote named
+<em>upstream</em> by typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">https://github.com/statscollection-dev/statscollection</span></code>.
+This allows you to fetch the latest changes from the main repository,
+so you don’t fall behind if the master branch is updated while you work on your feature branch.</li>
+<li>Create a feature branch for your work with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">my_feature</span></code></li>
+<li>Make changes to the docs and software, perform linting, run the tests and build the docs.
+For more information about this, see the sections below.</li>
+<li>Commit your changes with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">myfile.py</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;clear</span> <span class="pre">message&quot;</span></code>.</li>
+<li>Merge any new commits from the master with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">upstream</span> <span class="pre">master</span></code>.</li>
+<li>Push the changes to your fork using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">--set-upstream</span> <span class="pre">my_feature</span></code>.</li>
+<li>Create a pull request from <code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;YOUR_NAME&gt;/statscollection</span></code>.</li>
+<li>If you need to add more commits, simply commit, pull from upstream and push to your fork again.</li>
+</ol>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">When a pull request is created, the code will be <strong>tested and built</strong> by Travis CI.
+To see the exact commands executed when the code is tested and built,
+read the <a class="reference external" href="https://github.com/statscollection-dev/statscollection/blob/master/.travis.yml">.travis.yml</a> file
+in the main repository.
+If your pull request fails on Travis CI, make the necessary changes and push a new commit to the same branch.</p>
+</div>
+<div class="section" id="terminal-session-for-a-pull-request">
+<h3>Terminal session for a pull request<a class="headerlink" href="#terminal-session-for-a-pull-request" title="Permalink to this headline">¶</a></h3>
+<p>A terminal session with comments in presented below.
+We start by cloning the project to our GitHub account, downloading the files and adding a remote.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git --version <span class="c1"># git version 2.7.4</span>
+<span class="gp">$</span> git clone https://github.com/&lt;YOUR_NAME&gt;/statscollection.git
+<span class="gp">$</span> <span class="nb">cd</span> statscollection <span class="c1"># Change directory</span>
+<span class="gp">$</span> git remote add upstream https://github.com/statscollection-dev/statscollection.git
+</pre></div>
+</div>
+<p>Create a feature branch for your changes, make changes, test and commit.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git fetch upstream master <span class="c1"># Get the latest changes from the master</span>
+<span class="gp">$</span> git checkout -b my_feature_branch <span class="c1"># Create a new branch for development</span>
+<span class="gp">$</span> &lt;MAKE CHANGES&gt; <span class="c1"># Edit files, create new files, fix docs, etc</span>
+<span class="gp">$</span> pytest . --doctest-modules <span class="c1"># Run the tests</span>
+<span class="gp">$</span> black . <span class="c1"># Autoformat the code</span>
+<span class="gp">$</span> git add changed_file1.py changed_file2.py
+<span class="gp">$</span> git commit -m <span class="s2">&quot;description of changes&quot;</span>
+<span class="gp">$</span> git fetch upstream master <span class="c1"># Get the latest changes from the master</span>
+<span class="gp">$</span> git push origin --set-upstream my_feature_branch
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="documentation-contributions">
+<h2>Documentation contributions<a class="headerlink" href="#documentation-contributions" title="Permalink to this headline">¶</a></h2>
+<p>Documentation contributions are important contributions.
+If you only change the documentation, there is no need to run code formatting and tests locally.
+You should still build the documentation locally and verify that it looks good.</p>
+<ol class="arabic simple">
+<li>Fork and clone the <a class="reference external" href="https://github.com/statscollection-dev/statscollection">statscollection</a> repository on GitHub.</li>
+<li>Install <em>sphinx-autobuild</em> via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx-autobuild</span></code> if you haven’t.
+This is not a requirement, you can use the <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> command manually as well.</li>
+<li>Create a feature branch using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">my_feature_branch</span></code>.</li>
+<li>In the <code class="docutils literal notranslate"><span class="pre">statscollection</span></code> directory, type <code class="docutils literal notranslate"><span class="pre">sphinx-autobuild</span> <span class="pre">doc</span> <span class="pre">html</span> <span class="pre">-a</span> <span class="pre">-E</span> <span class="pre">--open-browser</span> <span class="pre">--watch</span> <span class="pre">.</span></code> to start building docs automatically.</li>
+<li>Edit files, make sure the documentation renders as expected.</li>
+<li>Stage the changed files <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">changed_file1.rst</span> <span class="pre">changed_file2.rst</span></code>.</li>
+<li>Create a commit message <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;description</span> <span class="pre">of</span> <span class="pre">changes&quot;</span></code>.</li>
+<li>Go to your fork <code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;YOUR_NAME&gt;/statscollection</span></code> and create a Pull Request.</li>
+</ol>
+<div class="section" id="building-the-docs">
+<h3>Building the docs<a class="headerlink" href="#building-the-docs" title="Permalink to this headline">¶</a></h3>
+<p>Docs may be built the <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> command.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sphinx-build doc html -a -E -W --keep-going -T
+</pre></div>
+</div>
+<p>Alternatively, the <em>sphinx-autobuild</em> package lets you continually build the documentation as you work.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sphinx-autobuild doc html -a -E --open-browser --watch .
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="code-contributions">
+<h2>Code contributions<a class="headerlink" href="#code-contributions" title="Permalink to this headline">¶</a></h2>
+<p>If you wish to contribute code, you have to</p>
+<ol class="arabic simple">
+<li>Run formatting on the code via the <a class="reference external" href="https://black.readthedocs.io/en/stable/">black</a> code formatter.</li>
+<li>Write proper documentation and tests for the code, testing is done using <a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a>.</li>
+<li>Document the code well, this project uses <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">numpydoc docstrings</a>.</li>
+<li>Balance readability with performance.
+Readability has first priority, but if you <a class="reference external" href="http://pynash.org/2013/03/06/timing-and-profiling/">time the code</a> and identify bottlenecks, they should be optimized.</li>
+</ol>
+<div class="section" id="testing">
+<h3>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h3>
+<p>Test the code with <a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a>.
+The documentation will double as a test—but documentation does not replace testing.
+Every algorithm implemented should be well tested.
+This involves (1) unit tests, (2) testing against existing implementations and (3) property-based testing, if possible.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pytest . --doctest-modules
+</pre></div>
+</div>
+</div>
+<div class="section" id="timing">
+<h3>Timing<a class="headerlink" href="#timing" title="Permalink to this headline">¶</a></h3>
+<p>Only optimize code that’s actually slow.
+While <code class="docutils literal notranslate"><span class="pre">%timeit</span></code> tests the speed of a function, the code may be timed line-by-line using the <code class="docutils literal notranslate"><span class="pre">%lprun</span></code> command in an Ipython console.
+Using <code class="docutils literal notranslate"><span class="pre">%lprun</span></code> requires installation of the <a class="reference external" href="https://github.com/rkern/line_profiler">line_profiler</a> package.</p>
+<p>The first line times the function, and the second line yields a line-by-line result.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">In [1]: %timeit function_to_run(n=10000)</span>
+
+<span class="go">In [2]: %lprun -f Class.function_to_time function_to_run(n=10000)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="linting">
+<h3>Linting<a class="headerlink" href="#linting" title="Permalink to this headline">¶</a></h3>
+<p>The project uses the <a class="reference external" href="https://black.readthedocs.io/en/stable/">black</a> code formatter.
+Run black on the Python files before submitting a pull request.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> black .
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="building-and-deploying">
+<h2>Building and deploying<a class="headerlink" href="#building-and-deploying" title="Permalink to this headline">¶</a></h2>
+<p>Developer notes go here.</p>
+<div class="section" id="code-ideas">
+<h3>Code ideas<a class="headerlink" href="#code-ideas" title="Permalink to this headline">¶</a></h3>
+<p>Below is a list of routines that would be nice to see implemented.</p>
+<ul class="simple">
+<li>Bootstrapping and resampling functions.</li>
+<li>Online statistics.</li>
+<li>Kernel density estimators.</li>
+<li>Kernel regression.</li>
+<li>Other nonparametric routines.</li>
+<li>Statistical tests, such as exact Mann–Whitney U test.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="index.html" title="previous chapter (use the left arrow)">Statscollection</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="packages/online.html" title="next chapter (use the right arrow)">Online</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="packages/online.html" title="Online"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Statscollection"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">statscollection 0.0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+  <div class="footer">
+    &copy; Copyright 2019 - 2019, tommyod.
+  </div>
+  </body>
+</html>

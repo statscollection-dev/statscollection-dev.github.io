@@ -1,0 +1,26 @@
+statscollection.online.classes.Mean
+===================================
+
+.. currentmodule:: statscollection.online.classes
+
+.. autoclass:: Mean
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Mean.__init__
+      ~Mean.evaluate
+      ~Mean.fit
+      ~Mean.return_from
+      ~Mean.yield_from
+   
+   
+
+   
+   
+   
