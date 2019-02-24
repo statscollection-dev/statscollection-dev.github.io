@@ -130,6 +130,7 @@ master/_static/jquery.js
 master/_static/jquery.min.map
 master/_static/js/bootstrap.js
 master/_static/js/bootstrap.min.js
+master/_static/js/copybutton.js
 master/_static/language_data.js
 master/_static/minus.png
 master/_static/no_image.png
