@@ -1,0 +1,26 @@
+statscollection.online.classes.Min
+==================================
+
+.. currentmodule:: statscollection.online.classes
+
+.. autoclass:: Min
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Min.__init__
+      ~Min.evaluate
+      ~Min.fit
+      ~Min.return_from
+      ~Min.yield_from
+   
+   
+
+   
+   
+   
