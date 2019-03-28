@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
@@ -179,22 +177,18 @@ This function applies a binary operator (e.g. addition) on an iterable,
 where the second argument of the binary operator is specified by a number.
 Although you should not abuse it, <em>italic</em> text may be used for emphasis,
 and fancier typographical elements—such as the em dash—may be used.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>arg</strong> (<em>any type</em>) – Any argument which is left-compatible with the binary operator.</li>
-<li><strong>iterable</strong> (<em>iterable</em>) – An iterable of arguments right-compatible with the binary operator.</li>
-<li><strong>binary_operator</strong> (<em>operator</em>) – A binary operator, such as addition, or something else entirely.</li>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arg</strong> (<em>any type</em>) – Any argument which is left-compatible with the binary operator.</p></li>
+<li><p><strong>iterable</strong> (<em>iterable</em>) – An iterable of arguments right-compatible with the binary operator.</p></li>
+<li><p><strong>binary_operator</strong> (<em>operator</em>) – A binary operator, such as addition, or something else entirely.</p></li>
 </ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Yields:</th><td class="field-body"><p class="first last"><em>element</em> – The result of applying the binary operator over the iterable.</p>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+<dt class="field-even">Yields</dt>
+<dd class="field-even"><p><em>element</em> – The result of applying the binary operator over the iterable.</p>
+</dd>
+</dl>
 <p class="rubric">Examples</p>
 <p>A simple example showing what the function does.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sequence</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
@@ -207,14 +201,13 @@ and fancier typographical elements—such as the em dash—may be used.</p>
 <span class="go">[1, 4, 9]</span>
 </pre></div>
 </div>
-<p>See <a class="reference internal" href="#knuth" id="id1">[knuth]</a>.</p>
+<p>See <a class="reference internal" href="#knuth" id="id1"><span>[knuth]</span></a>.</p>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="knuth" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[knuth]</a></td><td>Knuth, Donald E.: <em>The Art of Computer Programming, Volume 1 (3rd Ed.): Fundamental Algorithms</em>. Addison Wesley Longman Publishing Co., Inc.</td></tr>
-</tbody>
-</table>
+<dl class="citation">
+<dt class="label" id="knuth"><span class="brackets"><a class="fn-backref" href="#id1">knuth</a></span></dt>
+<dd><p>Knuth, Donald E.: <em>The Art of Computer Programming, Volume 1 (3rd Ed.): Fundamental Algorithms</em>. Addison Wesley Longman Publishing Co., Inc.</p>
+</dd>
+</dl>
 </dd></dl>
 
 </div>

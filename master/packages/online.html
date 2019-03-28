@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
@@ -149,32 +147,32 @@ These algorithms become relevant when data is too large to fit into memory.</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>The following classes are available for online computations on data streams, i.e. any iterable object in Python.</p>
-<table border="1" class="longtable docutils">
+<table class="longtable docutils align-center">
 <colgroup>
-<col width="10%" />
-<col width="90%" />
+<col style="width: 10%" />
+<col style="width: 90%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="statscollection.online.classes.Mean.html#statscollection.online.classes.Mean" title="statscollection.online.classes.Mean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mean</span></code></a></td>
-<td>The arithmetic mean.</td>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="statscollection.online.classes.Mean.html#statscollection.online.classes.Mean" title="statscollection.online.classes.Mean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mean</span></code></a></p></td>
+<td><p>The arithmetic mean.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="statscollection.online.classes.Min.html#statscollection.online.classes.Min" title="statscollection.online.classes.Min"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Min</span></code></a></td>
-<td>The minimum.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="statscollection.online.classes.Min.html#statscollection.online.classes.Min" title="statscollection.online.classes.Min"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Min</span></code></a></p></td>
+<td><p>The minimum.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="statscollection.online.classes.Max.html#statscollection.online.classes.Max" title="statscollection.online.classes.Max"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Max</span></code></a></td>
-<td>The maximum.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="statscollection.online.classes.Max.html#statscollection.online.classes.Max" title="statscollection.online.classes.Max"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Max</span></code></a></p></td>
+<td><p>The maximum.</p></td>
 </tr>
 </tbody>
 </table>
 <p>Online algorithms for sampling.</p>
-<table border="1" class="longtable docutils">
+<table class="longtable docutils align-center">
 <colgroup>
-<col width="10%" />
-<col width="90%" />
+<col style="width: 10%" />
+<col style="width: 90%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="statscollection.online.sampling.Sample.html#statscollection.online.sampling.Sample" title="statscollection.online.sampling.Sample"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sample</span></code></a></td>
-<td>Sample with equal probability from an iterable of unknown length.</td>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="statscollection.online.sampling.Sample.html#statscollection.online.sampling.Sample" title="statscollection.online.sampling.Sample"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sample</span></code></a></p></td>
+<td><p>Sample with equal probability from an iterable of unknown length.</p></td>
 </tr>
 </tbody>
 </table>
@@ -182,18 +180,18 @@ These algorithms become relevant when data is too large to fit into memory.</p>
 <div class="section" id="tutorial">
 <h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
 <p>The classes in this module share a common api, illustrated in the following example.</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">statscollection.online</span> <span class="kn">import</span> <span class="n">Mean</span>
+<div class="highlight-pycon3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">statscollection.online</span> <span class="k">import</span> <span class="n">Mean</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mean</span> <span class="o">=</span> <span class="n">Mean</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>  <span class="c1"># Fit a single item</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">mean</span><span class="o">.</span><span class="n">evaluate</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">mean</span><span class="o">.</span><span class="n">evaluate</span><span class="p">())</span>
 <span class="go">2.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mean</span> <span class="o">=</span> <span class="n">mean</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="nb">iter</span><span class="p">([</span><span class="mf">5.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">]))</span>  <span class="c1"># Fit an iterable object</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">mean</span><span class="o">.</span><span class="n">evaluate</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">mean</span><span class="o">.</span><span class="n">evaluate</span><span class="p">())</span>
 <span class="go">3.0</span>
 </pre></div>
 </div>
 <p>It’s possible to…</p>
-<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">Mean</span><span class="p">()</span><span class="o">.</span><span class="n">yield_from</span><span class="p">(</span><span class="nb">iter</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">])):</span>
-<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<div class="highlight-pycon3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">Mean</span><span class="p">()</span><span class="o">.</span><span class="n">yield_from</span><span class="p">(</span><span class="nb">iter</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">])):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 <span class="go">1.0</span>
 <span class="go">2.0</span>
 <span class="go">3.0</span>

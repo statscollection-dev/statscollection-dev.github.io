@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
   
   <!-- Licensed under the Apache 2.0 License -->
   <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
@@ -158,19 +156,15 @@ probability that any seen item is in the sample is equal. The algorithm
 accomplishes this by decreasing the probability that an item in the sample
 will be replaced by a newly seen item as it iterates over the data stream.</p>
 <p>Two different algorithms are implemented: one for sampling without
-replacement <a class="footnote-reference" href="#id3" id="id1">[1]</a> and one for sampling with replacements <a class="footnote-reference" href="#id4" id="id2">[2]</a>.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>num_samples</strong> (<em>int</em>) – The number of samples to keep in the reservoir.</li>
-<li><strong>replace</strong> (<em>bool</em>) – Whether or not sampling is with replacement.</li>
+replacement <a class="footnote-reference brackets" href="#id3" id="id1">1</a> and one for sampling with replacements <a class="footnote-reference brackets" href="#id4" id="id2">2</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_samples</strong> (<em>int</em>) – The number of samples to keep in the reservoir.</p></li>
+<li><p><strong>replace</strong> (<em>bool</em>) – Whether or not sampling is with replacement.</p></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Examples</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">random</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -202,23 +196,19 @@ replacement <a class="footnote-reference" href="#id3" id="id1">[1]</a> and one f
 </pre></div>
 </div>
 <p class="rubric">References</p>
-<table class="docutils footnote" frame="void" id="id3" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Jeffrey S. Vitter. <em>Random sampling with a reservoir</em>.
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Jeffrey S. Vitter. <em>Random sampling with a reservoir</em>.
 ACM Transactions on Mathematical Software (TOMS), 1985.
-doi&gt;10.1145/3147.3165</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Park, Byung-Hoon &amp; Ostrouchov, George &amp; Samatova,
+doi&gt;10.1145/3147.3165</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Park, Byung-Hoon &amp; Ostrouchov, George &amp; Samatova,
 Nagiza &amp; Geist, Al. (2004). <em>Reservoir-Based Random Sampling with
 Replacement from Data Stream</em>.
-doi&gt;10.1137/1.9781611972740.53.</td></tr>
-</tbody>
-</table>
+doi&gt;10.1137/1.9781611972740.53.</p>
+</dd>
+</dl>
 <dl class="method">
 <dt id="statscollection.online.sampling.Sample.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>num_samples=10</em>, <em>replace=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/statscollection/online/sampling.html#Sample.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#statscollection.online.sampling.Sample.__init__" title="Permalink to this definition">¶</a></dt>
@@ -226,26 +216,26 @@ doi&gt;10.1137/1.9781611972740.53.</td></tr>
 </dd></dl>
 
 <p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
+<table class="longtable docutils align-center">
 <colgroup>
-<col width="10%" />
-<col width="90%" />
+<col style="width: 10%" />
+<col style="width: 90%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#statscollection.online.sampling.Sample.__init__" title="statscollection.online.sampling.Sample.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([num_samples,&nbsp;replace])</td>
-<td>Initialize self.</td>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#statscollection.online.sampling.Sample.__init__" title="statscollection.online.sampling.Sample.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([num_samples, replace])</p></td>
+<td><p>Initialize self.</p></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate</span></code>()</td>
-<td>Return the computed statistic.</td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">evaluate</span></code>()</p></td>
+<td><p>Return the computed statistic.</p></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(iterable_or_item)</td>
-<td>Fit an iterable object or a single item.</td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(iterable_or_item)</p></td>
+<td><p>Fit an iterable object or a single item.</p></td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">return_from</span></code>(iterable)</td>
-<td>Fit item-by-item and yield the sequential results.</td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">return_from</span></code>(iterable)</p></td>
+<td><p>Fit item-by-item and yield the sequential results.</p></td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">yield_from</span></code>(iterable)</td>
-<td>Fit item-by-item and yield the sequential results.</td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">yield_from</span></code>(iterable)</p></td>
+<td><p>Fit item-by-item and yield the sequential results.</p></td>
 </tr>
 </tbody>
 </table>
