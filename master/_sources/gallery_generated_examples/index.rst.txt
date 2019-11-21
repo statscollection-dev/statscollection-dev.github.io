@@ -16,9 +16,9 @@ Below is a gallery of examples.
 
 .. only:: html
 
-    .. figure:: /gallery_generated_examples/images/thumb/sphx_glr_plot_sine_thumb.png
+ .. figure:: /gallery_generated_examples/images/thumb/sphx_glr_plot_sine_thumb.png
 
-        :ref:`sphx_glr_gallery_generated_examples_plot_sine.py`
+     :ref:`sphx_glr_gallery_generated_examples_plot_sine.py`
 
 .. raw:: html
 
@@ -31,7 +31,7 @@ Below is a gallery of examples.
    /gallery_generated_examples/plot_sine
 .. raw:: html
 
-    <div style='clear:both'></div>
+    <div class="sphx-glr-clear"></div>
 
 
 
