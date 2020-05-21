@@ -17,6 +17,7 @@ Below is a gallery of examples.
 .. only:: html
 
  .. figure:: /gallery_generated_examples/images/thumb/sphx_glr_plot_sine_thumb.png
+     :alt: Plot a sine function
 
      :ref:`sphx_glr_gallery_generated_examples_plot_sine.py`
 
