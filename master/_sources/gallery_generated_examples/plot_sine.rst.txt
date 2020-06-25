@@ -19,6 +19,7 @@ Here is a paragraph.
 
 
 
+
 .. image:: /gallery_generated_examples/images/sphx_glr_plot_sine_001.png
     :alt: plot sine
     :class: sphx-glr-single-img
