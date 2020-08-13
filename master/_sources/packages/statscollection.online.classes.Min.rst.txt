@@ -1,4 +1,4 @@
-statscollection.online.classes.Min
+﻿statscollection.online.classes.Min
 ==================================
 
 .. currentmodule:: statscollection.online.classes

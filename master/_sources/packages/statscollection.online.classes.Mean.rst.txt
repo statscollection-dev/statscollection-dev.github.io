@@ -1,4 +1,4 @@
-statscollection.online.classes.Mean
+﻿statscollection.online.classes.Mean
 ===================================
 
 .. currentmodule:: statscollection.online.classes

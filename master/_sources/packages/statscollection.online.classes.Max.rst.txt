@@ -1,4 +1,4 @@
-statscollection.online.classes.Max
+﻿statscollection.online.classes.Max
 ==================================
 
 .. currentmodule:: statscollection.online.classes

@@ -1,4 +1,4 @@
-statscollection.online.sampling.Sample
+﻿statscollection.online.sampling.Sample
 ======================================
 
 .. currentmodule:: statscollection.online.sampling
