@@ -5,8 +5,8 @@
 
 Computation times
 =================
-**00:00.113** total execution time for **gallery_generated_examples** files:
+**00:00.123** total execution time for **gallery_generated_examples** files:
 
 +----------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_gallery_generated_examples_plot_sine.py` (``plot_sine.py``) | 00:00.113 | 0.0 MB |
+| :ref:`sphx_glr_gallery_generated_examples_plot_sine.py` (``plot_sine.py``) | 00:00.123 | 0.0 MB |
 +----------------------------------------------------------------------------+-----------+--------+
