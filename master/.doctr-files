@@ -110,6 +110,7 @@ master/_static/fonts/source-serif-pro/bower.json
 master/_static/fonts/source-serif-pro/source-serif-pro.css
 master/_static/gallery-binder.css
 master/_static/gallery-dataframe.css
+master/_static/gallery-rendered-html.css
 master/_static/gallery.css
 master/_static/guzzle.css
 master/_static/images/logos/icon-above-font.png
