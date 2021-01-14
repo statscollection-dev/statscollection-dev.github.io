@@ -208,22 +208,22 @@ If your pull request fails on Travis CI, make the necessary changes and push a n
 <h3>Terminal session for a pull request<a class="headerlink" href="#terminal-session-for-a-pull-request" title="Permalink to this headline">¶</a></h3>
 <p>A terminal session with comments is presented below.
 We start by cloning the project from our GitHub account, downloading the files and adding a remote.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git --version <span class="c1"># git version 2.7.4</span>
-<span class="gp">$</span> git clone https://github.com/&lt;YOUR_NAME&gt;/statscollection.git
-<span class="gp">$</span> <span class="nb">cd</span> statscollection <span class="c1"># Change directory</span>
-<span class="gp">$</span> git remote add upstream https://github.com/statscollection-dev/statscollection.git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git --version <span class="c1"># git version 2.7.4</span>
+<span class="gp">$ </span>git clone https://github.com/&lt;YOUR_NAME&gt;/statscollection.git
+<span class="gp">$ </span><span class="nb">cd</span> statscollection <span class="c1"># Change directory</span>
+<span class="gp">$ </span>git remote add upstream https://github.com/statscollection-dev/statscollection.git
 </pre></div>
 </div>
 <p>Create a feature branch for your changes, make changes, test and commit.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git fetch upstream master <span class="c1"># Get the latest changes from the master</span>
-<span class="gp">$</span> git checkout -b my_feature_branch <span class="c1"># Create a new branch for development</span>
-<span class="gp">$</span> &lt;MAKE CHANGES&gt; <span class="c1"># Edit files, create new files, fix docs, etc</span>
-<span class="gp">$</span> pytest . --doctest-modules <span class="c1"># Run the tests</span>
-<span class="gp">$</span> black . <span class="c1"># Autoformat the code</span>
-<span class="gp">$</span> git add changed_file1.py changed_file2.py
-<span class="gp">$</span> git commit -m <span class="s2">&quot;description of changes&quot;</span>
-<span class="gp">$</span> git fetch upstream master <span class="c1"># Get the latest changes from the master</span>
-<span class="gp">$</span> git push origin --set-upstream my_feature_branch
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git fetch upstream master <span class="c1"># Get the latest changes from the master</span>
+<span class="gp">$ </span>git checkout -b my_feature_branch <span class="c1"># Create a new branch for development</span>
+<span class="gp">$ </span>&lt;MAKE CHANGES&gt; <span class="c1"># Edit files, create new files, fix docs, etc</span>
+<span class="gp">$ </span>pytest . --doctest-modules <span class="c1"># Run the tests</span>
+<span class="gp">$ </span>black . <span class="c1"># Autoformat the code</span>
+<span class="gp">$ </span>git add changed_file1.py changed_file2.py
+<span class="gp">$ </span>git commit -m <span class="s2">&quot;description of changes&quot;</span>
+<span class="gp">$ </span>git fetch upstream master <span class="c1"># Get the latest changes from the master</span>
+<span class="gp">$ </span>git push origin --set-upstream my_feature_branch
 </pre></div>
 </div>
 </div>
@@ -247,11 +247,11 @@ This is not a requirement, you can use the <code class="docutils literal notrans
 <div class="section" id="building-the-docs">
 <h3>Building the docs<a class="headerlink" href="#building-the-docs" title="Permalink to this headline">¶</a></h3>
 <p>Docs may be built using the <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code> command.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sphinx-build doc html -a -E -W --keep-going -T
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sphinx-build doc html -a -E -W --keep-going -T
 </pre></div>
 </div>
 <p>Alternatively, the <em>sphinx-autobuild</em> package lets you continually build the documentation as you work.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sphinx-autobuild doc html -a -E --open-browser --watch .
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sphinx-autobuild doc html -a -E --open-browser --watch .
 </pre></div>
 </div>
 </div>
@@ -272,7 +272,7 @@ Readability has first priority, but if you <a class="reference external" href="h
 The documentation will double as a test—but documentation does not replace testing.
 Every algorithm implemented should be well tested.
 This involves (1) unit tests, (2) testing against existing implementations and (3) property-based testing, if possible.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pytest . --doctest-modules
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pytest . --doctest-modules
 </pre></div>
 </div>
 </div>
@@ -292,7 +292,7 @@ Using <code class="docutils literal notranslate"><span class="pre">%lprun</span>
 <h3>Linting<a class="headerlink" href="#linting" title="Permalink to this headline">¶</a></h3>
 <p>The project uses the <a class="reference external" href="https://black.readthedocs.io/en/stable/">black</a> code formatter.
 Run black on the Python files before submitting a pull request.</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> black .
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>black .
 </pre></div>
 </div>
 </div>
