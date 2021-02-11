@@ -26,7 +26,6 @@ This is an example.
 
 Here is a paragraph.
 
-
 .. GENERATED FROM PYTHON SOURCE LINES 11-23
 
 
